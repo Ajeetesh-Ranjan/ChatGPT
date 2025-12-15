@@ -15,7 +15,8 @@ Aurora Conflicts Suite pairs a lightweight Express API with a React SPA to visua
 ## Local development
 - Run `npm install` once at repo root.
 - Start API: `npm run dev --workspace api` (listens on `:4000`).
-- Start SPA: `npm run dev --workspace web` (listens on `:5173`).
+- Start SPA: `npm run dev --workspace web` (listens on `:5173`). Set `VITE_API_BASE=http://localhost:4000` to exercise live API
+  CRUD; without it the SPA uses the seeded client-side data for portability.
 - Update `.env` values as needed; defaults rely solely on in-memory data for portability.
 
 ## Data & persistence

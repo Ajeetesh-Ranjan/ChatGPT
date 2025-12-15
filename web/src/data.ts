@@ -1,3 +1,5 @@
+import type { AccessReview } from "./api";
+
 export type ContentBlock =
   | { type: "callout"; tone?: "info" | "warn" | "danger"; title: string; body: string }
   | { type: "kv"; title: string; rows: [string, string][] }
@@ -105,7 +107,7 @@ TFD.sections = [
   },
 ];
 
-export const accessReviewExamples = [
+export const accessReviewExamples: AccessReview[] = [
   {
     id: "ci-001",
     subject: "Client CI144118322",

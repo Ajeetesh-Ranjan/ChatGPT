@@ -207,7 +207,11 @@ function App() {
             ))}
           </div>
 
-          <AccessReviewPanel initialItems={accessReviewExamples} />
+          <AccessReviewPanel
+            initialItems={accessReviewExamples}
+            useApi={Boolean(import.meta.env.VITE_API_BASE)}
+            apiBase={import.meta.env.VITE_API_BASE}
+          />
         </section>
       </main>
     </div>
