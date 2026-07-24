@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "aurora-conflicts-web",
   "version": "0.1.0",
   "type": "module",
@@ -9,12 +10,23 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
+=======
+  "name": "aegisaccess-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+>>>>>>> origin/main
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.10",
@@ -24,5 +36,16 @@
     "typescript": "^5.6.3",
     "vite": "^5.4.10",
     "vitest": "^1.3.1"
+=======
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "jsdom": "^24.1.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^1.6.0"
+>>>>>>> origin/main
   }
 }

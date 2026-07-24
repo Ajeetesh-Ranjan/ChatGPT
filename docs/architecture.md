@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aurora Conflicts Suite Architecture
 
 Aurora Conflicts Suite pairs a lightweight Express API with a React SPA to visualise TFD content and manage a sample Access Review workflow.
@@ -26,3 +27,28 @@ Aurora Conflicts Suite pairs a lightweight Express API with a React SPA to visua
 - CORS enabled by default for rapid prototyping; tighten origins before production.
 - Input validation with Zod to reduce malformed payload risk.
 - CI adds a ZAP baseline DAST job targeting a configurable staging URL.
+=======
+# Architecture
+
+## API (api/)
+- Express server with SQLite for persistence.
+- Tables: `access_reviews`, `audit_logs`, `applications`.
+- Endpoints:
+  - `GET /health`
+  - `GET /api/orr/application-columns` for PwC AU ORR-aligned metadata.
+  - CRUD for `/api/access-reviews` with `/api/access-reviews/:id/audit-logs`.
+  - `GET/POST /api/applications` for the IT owner registry workflow.
+- Audit logging persists create/update/delete events.
+
+## SPA (web/)
+- Vite + React TypeScript single-page app.
+- Features:
+  - Capture and list access reviews with audit visibility.
+  - IT owner application capture with ORR column hints.
+  - Application registry table.
+- Local dev proxy points to API on port 4000.
+
+## Data
+- Default SQLite file stored at `api/data/dev.db` (created automatically).
+- Tests use in-memory SQLite (`:memory:`) via Jest setup.
+>>>>>>> origin/main

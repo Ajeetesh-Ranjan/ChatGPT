@@ -2,16 +2,27 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
+<<<<<<< HEAD
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
     "moduleResolution": "bundler",
+=======
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+>>>>>>> origin/main
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+<<<<<<< HEAD
     "strict": true
+=======
+    "types": ["vitest/globals"]
+>>>>>>> origin/main
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
