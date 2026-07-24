@@ -1,13 +1,7 @@
 node_modules
 npm-debug.log*
 dist
-<<<<<<< HEAD
 coverage
 .DS_Store
 .env
 .vscode
-=======
-api/data
-database.sqlite
-.DS_Store
->>>>>>> origin/main

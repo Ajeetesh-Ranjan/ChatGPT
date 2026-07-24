@@ -1,29 +1,16 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "node",
-=======
-    "target": "ES2020",
-    "module": "CommonJS",
->>>>>>> origin/main
     "outDir": "dist",
     "rootDir": "src",
     "esModuleInterop": true,
     "strict": true,
-<<<<<<< HEAD
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
   "include": ["src/**/*"],
-=======
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*.ts"],
->>>>>>> origin/main
   "exclude": ["node_modules", "dist"]
 }
