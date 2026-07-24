@@ -1,0 +1,11 @@
+{
+  "name": "aurora-conflicts-suite",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Aurora Conflicts Suite - organizational web API + SPA starter with Access Review feature",
+  "workspaces": ["api", "web"],
+  "scripts": {
+    "lint": "echo 'No root lint'",
+    "test": "npm run test --workspace api && npm run test --workspace web"
+  }
+}
